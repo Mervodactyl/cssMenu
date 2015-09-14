@@ -1,6 +1,6 @@
 /* All styles for directory 'me_and_sam' */
 
-*
+*,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -8,15 +8,26 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 input:before {
   position: relative;
   right: 930px;
   font-size: 2em;
   content:'\2630';
+  color: #fff;
+  cursor: pointer;
 }
 
 nav {
+  width: 100%;
+  height: 100vh;
   display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
 }
 
 ul {
@@ -37,10 +48,23 @@ input:checked+nav {
   display: block;
 }
 
+input:checked:before {
+  color: #000;
+}
+
 input {
   float: right;
   position: absolute;
   right: -900px;
+  z-index: 2;
+}
+
+section {
+  height: 100vh;
+  background-image: url("../images/mac_and_me_v2.jpg");
+  background-size: cover;
+  background-position: 100% 120%;
+  background-repeat: no-repeat;
 }
 
 
