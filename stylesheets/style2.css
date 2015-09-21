@@ -1,4 +1,4 @@
-/* All styles for directory 'portfolio' */
+/* All styles for directory 'me_and_sam' */
 
 @media (min-width: 20em) {
 
@@ -12,7 +12,7 @@
 
 body {
   overflow-x: hidden;
-  /*text-align: center;*/
+  text-align: center;
 }
 
 input:before {
@@ -39,15 +39,11 @@ ul {
 
 li {
   list-style-type: none;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
-}
-
-h1 {
-  background-color: orange;
-  margin: 0;
 }
 
 .insite-links-container ul {
@@ -77,6 +73,10 @@ input {
   z-index: 2;
 }
 
+input:checked+.insite-links-container a:focus {
+  display: none;
+}
+
 .background {
   height: 100vh;
   background-image: url("../images/mac_and_me_v2.jpg");
@@ -99,8 +99,7 @@ input {
 .contact-icons-container {
   position: absolute;
   top: 92%;
-  left: 55%;
-  width: 55%;
+  right: -7.5%;
   transform: translate(-50%, -50%);
   margin: 0;
 }
@@ -115,25 +114,6 @@ input {
   margin-right: 10px;
   background-color: orange;
 }
-
-.wrapper {
-  padding: 0 5%;
-  width: 100%;
-}
-
-.skills-list {
-  margin: 5px;
-}
-
-.project-images {
-  float: center;
-  margin: 5%;
-  height: 30%;
-  width: 47%;
-  border-radius: 50%;
-}
-
-
 
 }
 
