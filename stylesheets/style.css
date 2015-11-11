@@ -46,12 +46,15 @@ a {
 }
 
 h1 {
-  background-color: orange;
+  /*background-color: orange;*/
   margin: 0;
+  text-align: center;
+  padding: 8% 0%;
 }
 
 .insite-links-container ul {
   padding-top: 2.5em;
+  text-align: center;
 }
 
 .insite-links-container li {
